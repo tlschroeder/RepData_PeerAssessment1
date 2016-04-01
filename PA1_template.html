@@ -157,8 +157,8 @@ sumNas &lt;- nrow(nas)
 sumNas</code></pre>
 <pre><code>## [1] 2304</code></pre>
 </div>
-<div id="missing-value-replacement" class="section level2">
-<h2>Missing value replacement:</h2>
+<div id="missing-value-replacement-replaced-with-overall-mean-for-same-interval" class="section level2">
+<h2>Missing value replacement (replaced with overall mean for same interval):</h2>
 <pre class="r"><code>replaceVec &lt;- tapply(sData$steps, sData$interval, mean, na.rm=TRUE, simplify=TRUE)
 fData &lt;- sData
 misSteps &lt;- is.na(sData$steps)

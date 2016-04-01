@@ -78,7 +78,7 @@ sumNas
 ## [1] 2304
 ```
 
-##Missing value replacement:
+##Missing value replacement (replaced with overall mean for same interval):
 
 ```r
 replaceVec <- tapply(sData$steps, sData$interval, mean, na.rm=TRUE, simplify=TRUE)
